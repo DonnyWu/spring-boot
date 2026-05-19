@@ -15,7 +15,7 @@ public class SoftwareEngineerService {
         this.softwareEngineerRepository = softwareEngineerRepository;
     }
 
-    public List<SoftwareEngineer> getSoftwareEngineers()
+    public List<SoftwareEngineer> getAllSoftwareEngineers()
     {
         return softwareEngineerRepository.findAll();
     }
