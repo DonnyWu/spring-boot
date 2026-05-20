@@ -1,13 +1,17 @@
 package donnywu.github.io.springboot;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import org.hibernate.annotations.AnyDiscriminatorImplicitValues;
 
 import java.util.Objects;
 
 @Entity
 public class SoftwareEngineer {
 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Integer id;
     private String name;
